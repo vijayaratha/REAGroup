@@ -63,9 +63,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkLeftNoException" time="0.002"/>
-  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkValid" time="0"/>
-  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkReportNoException" time="0"/>
-  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkMoveNoException" time="0"/>
-  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkRightNoException" time="0"/>
+  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkMoveTest" time="0.002"/>
+  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkReportTest" time="0"/>
+  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkLeftTest" time="0"/>
+  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkRightTest" time="0"/>
+  <testcase classname="com.reagroup.robot.test.RobotTest" name="checkValidTest" time="0"/>
 </testsuite>

@@ -10,7 +10,7 @@ import com.reagroup.robot.RobotException;
 public class RobotTest {
 
     @Test
-    public void checkValid() {
+    public void checkValidTest() {
 
         try {
             Robot.place("PLACE 1,0,NORTH");
@@ -22,7 +22,7 @@ public class RobotTest {
     }
 
     @Test
-    public void checkMoveNoException() {
+    public void checkMoveTest() {
         try {
             Robot.place("PLACE 1,0,NORTH");
             Robot.move();
@@ -35,7 +35,7 @@ public class RobotTest {
 
     @Test
 
-    public void checkLeftNoException() {
+    public void checkLeftTest() {
         try {
             Robot.place("PLACE 1,0,NORTH");
             Robot.turnLeft();
@@ -48,7 +48,7 @@ public class RobotTest {
 
     @Test
 
-    public void checkRightNoException() {
+    public void checkRightTest() {
         try {
             Robot.place("PLACE 1,1,NORTH");
             Robot.turnRight();
@@ -60,7 +60,7 @@ public class RobotTest {
     }
 
     @Test
-    public void checkReportNoException() {
+    public void checkReportTest() {
         Robot.report();
         Assert.assertTrue(true);
     }
