@@ -15,7 +15,8 @@ public class Main {
     BufferedReader reader =
             new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println ("Please enter command  eg: PLACE 0,0,NORTH (If you want to quit type 'exit') ");
+        System.out.println ("Please enter command to initiate the Robot position. Valid commands are PLACE,MOVE,LEFT,RIGHT,REPORT \n"
+            + " eg: PLACE 0,0,NORTH (If you want to quit type 'exit') ");
 
         while (true) {
             System.out.println("\n $ >");

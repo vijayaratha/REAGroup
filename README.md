@@ -45,3 +45,9 @@ TestCases
 
 Test scenarios are added as Junit tests.(src/test/java/com/reagroup/robot/test/RobotTest.java)
 
+SampleData
+----------
+
+Sample data is added in the sampledata.ext file in the src/test/resources folder, which lists some test inputs and the outputs.
+
+

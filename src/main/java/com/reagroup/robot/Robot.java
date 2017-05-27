@@ -12,6 +12,11 @@ public class Robot {
 
     private static Table table = new Table();
 
+    /**
+     * Process the user command
+     * @param command
+     * @throws RobotException
+     */
     public static void process(String command) throws RobotException {
 
         if (command.contains(RobotConstants.PLACE)) {
