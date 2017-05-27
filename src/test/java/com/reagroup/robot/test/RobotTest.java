@@ -1,13 +1,21 @@
 
 package com.reagroup.robot.test;
 
+import org.junit.Assert;
 import org.junit.Test;
+
+import com.reagroup.robot.Robot;
+import com.reagroup.robot.RobotException;
 
 public class RobotTest {
 
     @Test
     public void checkValidPlaceCommandExceptionThrown() {
-        Robot.checkPalce("MOVE");
+        try {
+            Robot.checkPlace("MOVE");
+        } catch (RobotException e) {
+            Assert.assertTrue(true);
+        }
 
     }
 
@@ -30,16 +38,16 @@ public class RobotTest {
         Robot.turnRight();
         Assert.assertTrue(true);
     }
-    
+
     @Test
-    public void checkReportNoException(){
+    public void checkReportNoException() {
         Robot.report();
-        assertTrue();
+        Assert.assertTrue(true);
     }
-    
+
     @Test
-    public void checkFallConditionNoException(){
+    public void checkFallConditionNoException() {
         Robot.checkFall();
-        assertTrue();
+        Assert.assertTrue(true);
     }
 }
