@@ -10,33 +10,53 @@ import com.reagroup.robot.RobotException;
 public class RobotTest {
 
     @Test
-    public void checkValidPlaceCommandExceptionThrown() {
+    public void checkValid() {
+
         try {
-            Robot.checkPlace("MOVE");
-        } catch (RobotException e) {
+            Robot.place("PLACE 1,0,NORTH");
             Assert.assertTrue(true);
+        } catch (RobotException e) {
+            e.printStackTrace();
         }
 
     }
 
     @Test
     public void checkMoveNoException() {
-        Robot.move();
-        Assert.assertTrue(true);
+        try {
+            Robot.place("PLACE 1,0,NORTH");
+            Robot.move();
+            Assert.assertTrue(true);
+        } catch (RobotException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Test
 
     public void checkLeftNoException() {
-        Robot.turnLeft();
-        Assert.assertTrue(true);
+        try {
+            Robot.place("PLACE 1,0,NORTH");
+            Robot.turnLeft();
+            Assert.assertTrue(true);
+        } catch (RobotException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Test
 
     public void checkRightNoException() {
-        Robot.turnRight();
-        Assert.assertTrue(true);
+        try {
+            Robot.place("PLACE 1,1,NORTH");
+            Robot.turnRight();
+            Assert.assertTrue(true);
+        } catch (RobotException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Test
@@ -45,9 +65,4 @@ public class RobotTest {
         Assert.assertTrue(true);
     }
 
-    @Test
-    public void checkFallConditionNoException() {
-        Robot.checkFall();
-        Assert.assertTrue(true);
-    }
 }
